@@ -1,0 +1,36 @@
+*** Starting uWSGI 2.0.15 (64bit) on [Sat Nov 25 17:14:32 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1) on 30 October 2017 06:31:19
+os: Darwin-15.6.0 Darwin Kernel Version 15.6.0: Mon Jan  9 23:07:29 PST 2017; root:xnu-3248.60.11.2.1~1/RELEASE_X86_64
+nodename: smartli.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/smart/Desktop/dj/bj18/dailyfresh
+writing pidfile to uwsgi2.pid
+detected binary path: /Users/smart/.virtualenvs/dailyfresh/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/smart/Desktop/dj/bj18/dailyfresh
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8081 fd 3
+Python version: 3.5.2 (default, Oct 21 2017, 11:45:19)  [GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)]
+Set PythonHome to /Users/smart/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x7fa6e20006a0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415200 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fa6e20006a0 pid: 8115 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8115)
+spawned uWSGI worker 1 (pid: 8116, cores: 2)
+spawned uWSGI worker 2 (pid: 8117, cores: 2)
+spawned uWSGI worker 3 (pid: 8118, cores: 2)
+spawned uWSGI worker 4 (pid: 8119, cores: 2)
+[pid: 8117|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 819 bytes} [Sat Nov 25 17:19:02 2017] GET /goods/8 => generated 9326 bytes in 479 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 8118|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 819 bytes} [Sat Nov 25 17:19:16 2017] GET /goods/8 => generated 9326 bytes in 375 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 8119|app: 0|req: 1/3] 127.0.0.1 () {48 vars in 919 bytes} [Sat Nov 25 18:27:44 2017] POST /cart/add => generated 67 bytes in 408 msecs (HTTP/1.1 200) 3 headers in 94 bytes (2 switches on core 0)
